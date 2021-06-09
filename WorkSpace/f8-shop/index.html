@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- các thẻ cơ bản:
+    h1-h6      heading
+    p          paragraph
+    img        image
+    a          anchor
+    ul, li     unordered list, list item, li là dạng chấm, ol là dạng số ( list)
+    table      thead(table head) tbody, tr(table road), 
+                th thuộc thead (hàng)
+                tr thuộc tbody
+                td thuộc tr    
+    input có radio cùng tên sẽ chỉ chọn được 1 
+    button
+    div -->
+
+<!-- 
+        Attribute là thuộc tính của Html nằm trong thẻ mở 
+    -->
+
+<!-- 
+         3 cách sử dụng CSS trong HTML
+         CSS in HTML
+               1 Internal: sử dụng cặp thẻ style trong đoạn code html 
+               2 External: tạo riêng file css rồi link vào html
+               3 Inline : viết thẻ mở, dùng Attribute         
+    -->
+
+<!-- CSS selector: là cách để gọi đưuọc tới các element( phần tử) trong html  cần style ( css) 
+        ID (định danh duy nhất) #
+        Class (sử dụng thuộc tính css chung cho nhiều đối tượng ) .
+        -->
+
+        <!-- Priority (độ ưu tiên) 
+         1, giữa internal và external: ko cso độ ưu tiên, ai gọi sau dùng trước
+         2,  in line: 1000
+         3,  id: 100
+         4, class: 10 
+         5, tag name: 1      điểm càng cao độ ưu tiên càng lớn
+         6, Equal specificity như 1
+         7, Universal selector and inherited ( toàn bộ bvaf kế thừa) 
+
+        -->
+
+        <!-- CSS Variable
+            Ví dụ
+        :root {
+    --text-color: violet;
+}
+        để thay đổi thuộc tính cho element dễ dàng nhanh gọn hơn
+        vd: h1{
+            color: var(--text-color)
+        }
+        -->
+
+        <!-- CSS  units (đơn vị)
+            1, Absolute units (đơn vị tuyệt đói)
+            px ko bị thay đổi 
+            pt
+            cm
+            mm
+            ich
+            ...
+            2, Relative units (đơn vị tương đôi)
+            % phụ thuộc vào thẻ chứa nó
+            rem: phụ thuộc vào thẻ html
+            em: phụ thuộc vào thẻ chứa thuộc tính gần với nó nhất
+            vw viewport width phụ thuộc vào kich thước của trình duyệt
+            vh viewport height phụ thuộc vào kich thước tình duyệt
+            vmin
+            vmax
+            ex
+            ch
+
+
+         -->
+
+<html>
+  <!-- phần đầu -->
+
+  <head>
+    <title>F8 SHOP</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- <style>
+           h1 {
+               color: aqua;
+               font-size: 30px;
+           }
+           #heading-id{
+               color: #000;
+
+           }
+       </style> -->
+  </head>
+  <!-- phần thân -->
+
+  <body>
+    <h1 title="Tiêu đề" id="heading-id" class="heading-class">
+      Trực tiếp bóng đá Brazil - Ecuador: SAO Ngoại hạng Anh mở tỷ số
+    </h1>
+    <input name="1" type="radio" />
+    <input name="1" type="radio" />
+    <input name="1" type="radio" />
+    <button>đăng kí</button>
+    <p>
+      Brazil là đội bóng duy nhất toàn thắng các trận đấu đã qua tại vòng loại
+      World Cup khu vực Nam Mỹ. Đoàn quân của HLV Tite lần lượt khuất phục
+      Bolivia (5-0), Peru (4-2), Venezuela (1-0) và Uruguay (2-0). Tuy nhiên,
+      trận tiếp đón Ecuador ở Porto Alegre sẽ là thử thách không nhỏ dành cho
+      các "vũ công Samba".
+    </p>
+    <img
+      src="https://cdn.24h.com.vn/upload/2-2021/images/2021-06-05/brazil-660-1622828070-695-width660height396.jpg"
+      alt="anh brazil"
+    />
+    <a href="https://fullstack.edu.vn/learning/html-css?id=2140">f8</a>
+    <ul>
+      <li>html css cơ bản</li>
+      <li>cai dặt moi truong</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <table>
+      <thead>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Địa chỉ</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Tuân</td>
+          <td>HD</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Dương</td>
+          <td>HD</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="select">
+      <p>vu minh tuan</p>
+      <button>nộp bài</button>
+    </div>
+  </body>
+</html>

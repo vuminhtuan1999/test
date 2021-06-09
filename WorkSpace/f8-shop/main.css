@@ -1,0 +1,10 @@
+
+:root {
+    --text-color: violet;
+}
+h1 {
+    color: var(--text-color);
+}
+p {
+    color: var(--text-color);
+}
